@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- Contoh HTML Level Pembelajaran -->
+<div id="level">
+    <h1>Level 1: Belajar Matematika Dasar</h1>
+    <p>Selesaikan soal di bawah ini untuk melanjutkan ke level berikutnya.</p>
+    <button onclick="nextLevel()">Jawab Soal</button>
+</div>
+
+<script>
+    function nextLevel() {
+        // Logika untuk berpindah ke level berikutnya
+        document.getElementById('level').innerHTML = `
+            <h1>Level 2: Matematika Menengah</h1>
+            <p>Selesaikan tantangan ini untuk lanjut ke level selanjutnya.</p>
+            <button onclick="nextLevel()">Jawab Soal</button>
+        `;
+    }
+</script>
+
+</body>
+</html>
